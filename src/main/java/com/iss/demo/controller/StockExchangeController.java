@@ -57,6 +57,5 @@ public class StockExchangeController {
 		response.setSellers(sellers);
 
 		return response;
-		// return dao.findBySellerRateGreaterThan(buyer.getBuyerRate());
 	}
 }
