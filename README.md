@@ -42,7 +42,7 @@ You can execute this maven command: 'mvn spring-boot:run'.
 		"buyerName": "Buyer-1", \
 		"required": "8", \
 		"buyerRate": "550" \
-	} \
+	} 
  3. Sample response: \
 	{ \
     "buyers": null, \
@@ -69,5 +69,5 @@ You can execute this maven command: 'mvn spring-boot:run'.
 						"available": 6 \
 					} \
 				] \
-	} \
+	} 
 	
