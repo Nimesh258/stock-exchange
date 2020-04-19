@@ -1,5 +1,5 @@
 # Stock Exchange
-## An example Stock Market REST API Application 
+## Stock Market REST API Application 
 
 ## Main Technology Stack
  * Spring Boot 
@@ -11,29 +11,30 @@
 ## To run the application
 You can execute this maven command: 'mvn spring-boot:run'. 
 
-## Rules for stock exchange are given as comments in the below java classes:
-com.iss.demo.dao.StockExchangeDao -> Rule5
-com.iss.demo.controller.StockExchangeController -> Rule1 to Rule4 and Rule7
+## Rules for stock exchange are given as comments in the below java classes: 
+
+* com.iss.demo.dao.StockExchangeDao -> Rule5
+* com.iss.demo.controller.StockExchangeController -> Rule1 to Rule4 and Rule7
 
 ## To test the application
 
  1. Web service endpoints:
 	* To get available sellers based on Buyers options:
-	curl 
-	--location
-	--request POST 'http://localhost:8080/seller' \
-	--header 'Content-Type: application/json' \
-	--data-raw '{
-					"buyerName": "Buyer-1",
-					"required": "8",
-					"buyerRate": "550"
-				}'
+		curl 
+		--location
+		--request POST 'http://localhost:8080/seller' \
+		--header 'Content-Type: application/json' \
+		--data-raw '{
+						"buyerName": "Buyer-1",
+						"required": "8",
+						"buyerRate": "550"
+					}'
 	
-	*To get all the available sellers
-	curl --location --request GET 'http://localhost:8080/sellers'
+	* To get all the available sellers
+		curl --location --request GET 'http://localhost:8080/sellers'
 	
-	*To get sellers by ID
-	curl --location --request GET 'http://localhost:8080/sellers/1'
+	* To get sellers by ID
+		curl --location --request GET 'http://localhost:8080/sellers/1'
 	
 	
  2. Sample Request:
